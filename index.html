@@ -2,6 +2,13 @@
 	<head>
 	</head>
 	<body>
-		<a href="klever-wallet://unstoppable-domains/intro">Deeplink</a>
+		<a id="btn">Deeplink</a>
 	</body>
+	<script>
+		const btn = document.getElementById("btn")
+
+		btn.addEventListener("click", function() {
+			window.open("klever-wallet://unstoppable-domains/intro")
+		});
+	</script>
 </html>
